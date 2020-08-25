@@ -1,0 +1,21 @@
+{
+  "people": [{
+      "name": "John",
+      "age": 50,
+      "isAdmin": true,
+      "courses": ["html", "css", "js"]
+    },
+    {
+      "name": "Julia",
+      "age": 35,
+      "isAdmin": false,
+      "courses": ["html", "css"]
+    },
+    {
+      "name": "Mayson",
+      "age": 45,
+      "isAdmin": false,
+      "courses": ["js"]
+    }
+  ]
+}

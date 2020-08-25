@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON-AJAX exercise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h3>XMLHttpRequest()-JSON-AJAX</h3>
+
+  <ul id="people"></ul>
+
+  <script>
+    var xhttp = new XMLHttpRequest() // creates an XMLHttpRequest object
+    // function to be executed every time the status of the XMLHttpRequest object changes
+    xhttp.onreadystatechange = function () {
+      // when readyState property is 4 and the status property is 200, the response is ready
+      if (this.readyState == 4 && this.status == 200) {
+        // Typical action to be performed when the document is ready: document.getElementById("demo").innerHTML = xhttp.responseText;
+        var response = JSON.parse(xhttp.responseText) // convert into JS-object
+        // console.log(response.people);
+        let people = response.people;
+
+        let output = '';
+        for (let i = 0; i < people.length; i++) {
+          output += '<li>' + people[i].name + '</li>';
+        }
+        document.getElementById('people').innerHTML = output;
+      }
+    }
+    xhttp.open('GET', 'people.json', true)
+    xhttp.send()
+  </script>
+</body>
+
+</html>

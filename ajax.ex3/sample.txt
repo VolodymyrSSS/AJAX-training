@@ -1,0 +1,3 @@
+This is simple text for examples.
+I could spend days just tweaking things on my computer. Actually, I do. Whenever I see something annoying, I want to drop everything and try to fix it right away. It can be anything. From a minor: “Hey, I just run the same command twice, I should create an alias!” to installing random tools ( “Hmm, I’m wondering if there is a way to get notifications when a long-running job in a terminal finishes, so I can do other stuff in the meantime?”). I also love to read what tools other people are using. This time, I’ve decided to share mine.
+Dozer is a small application that keeps my menu bar manageable. It lets me hide those items that I’m not using very often. And with a keyboard shortcut, I can quickly show/hide them.
